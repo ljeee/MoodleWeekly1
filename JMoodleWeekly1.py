@@ -57,7 +57,7 @@ print(f"Producto: {nombre}, Cantidad: {cantidad} Precio/U ${precio:.2f} Descuent
 print(f"Costo total: ${Costototal:.2f}")
 if Costototal == 0:
     print("¿La ganga")
-elif Costototal > 1000:
+elif Costototal > 10000:
     print("Eso son varias horas de camello xd")
-elif Costototal > 500:
+elif Costototal > 5000:
     print("Worth la vdd?")
