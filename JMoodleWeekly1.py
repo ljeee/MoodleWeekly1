@@ -26,7 +26,7 @@ if cantidad.isnumeric():
         print("Como que nada? xd")
         exit()
 else:
-    print("Ojala fueran numerosxd")
+    print("Ojala fueran numeros validos ;b ")
     exit()
 
 ### Descuento ###
@@ -38,7 +38,7 @@ if descuento.isnumeric():
         print("Y Ese descuento tan raro xd")
         exit()
 else:
-    print("Eso no es un porcentaje")
+    print("Eso no es un porcentaje valido xd")
     exit()
 
 ### Cálculo del costo###
