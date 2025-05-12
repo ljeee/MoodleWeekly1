@@ -36,13 +36,15 @@ def AddProducts(Inventory, Product, Price, Quantity):
             continue
         elif Price.isalpha():
             print("Price must be a number")
-        else:
+        elif Price.isdigit():
             Price = float(Price)
             if Price <= 0:
                 print("Price must be greater than 0")
             else:
                 print(f"Price of {Product.title()} added")
                 break
+        else:
+            print("Price must be a number")
         
     while True:
         Quantity = input("Enter the Product quantity: ").strip()
@@ -109,7 +111,7 @@ def UpdateInfo():
                         ChangePrice = input("What is the new price? ").strip()
                         if ChangePrice.isdigit():
                             ChangePrice = float(ChangePrice)
-                            if ChangePrice < 0:
+                            if ChangePrice < -1:
                                 print("The price cannot be less than 0, or are you giving it away?")
                             else:
                                 Inventory[LookForProduct]['Price'] = ChangePrice
@@ -181,7 +183,6 @@ def InventoryList():
     if not Inventory:
         print("-----------------------------")
         print("No products in the inventory")
-        print("-----------------------------")
     else:
         print("This is the list of products in the inventory")
         print("-------------------------------------------------")
